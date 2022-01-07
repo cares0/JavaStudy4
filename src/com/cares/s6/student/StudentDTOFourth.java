@@ -4,3 +4,4 @@ public class StudentDTOFourth extends StudentDTOThird {
 
 	int music;
 }
+

@@ -4,9 +4,13 @@ public class StudentMain {
 
 	public static void main(String[] args) {
 
-		StudentDTOSecond studentDTOSecond = new StudentDTOSecond();
-		studentDTOSecond.eng = 50;
-		
+		StudentDTOSecond ss = new StudentDTOSecond();
+		ss.kor = 50;
+		ss.eng = 50;
+		ss.math = 50;
+		ss.history = 50;
+	
+		ss.setTotal();
 
 	}
 

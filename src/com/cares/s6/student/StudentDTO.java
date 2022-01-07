@@ -1,19 +1,22 @@
 package com.cares.s6.student;
 
-public class StudentDTO {
+public abstract class StudentDTO {
 
 	String name;
 	int num;
 	int kor;
 	int eng;
 	int math;
-	public StudentDTO() {
-		
-	}
+	int total;
+	// 부모에다 선언을 하면 나머지는 자동 상속이기에 total이 들어옴
 	
-	public StudentDTO(String name) {
-		this.name = name;
-	}
+	//public void setTotal() {
+	//	this.total = kor + eng + math;
+	//}
+	// 자식들은 못씀, 학년마다 과목이 추가되기 때문에
+	
+	public abstract int setTotal(); // 추상메서드를 만들어줌
+	
 	
 	// 여기까지 공통과목
 	
